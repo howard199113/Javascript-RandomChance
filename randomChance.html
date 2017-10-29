@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">        
+        <script>
+            function randomChance(quarters){
+                var win = 75;
+                var wonQuarters = 0;
+                while(quarters >= 1){
+                    quarters --;
+                    console.log("You have the remaining " + quarters);
+                if((Math.floor(Math.random()*100))+1 === win){
+                    wonQuarters = Math.floor(Math.random()* 50) + 50;
+                    console.log("You have won! " + wonQuarters + " Quarters")
+                    quarters += wonQuarters;
+                    console.log("These are your remaining quarters " + quarters);
+                }
+                }
+                quarters = "you are broke!!!";
+                return quarters;
+            }
+            randomChance(20);
+         </script>
+</head>
+
+<body>
+</body>
+</html>
